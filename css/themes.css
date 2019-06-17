@@ -1,0 +1,117 @@
+body {
+  background-image: url(../img/coldDawnBackground.jpg);
+  background-repeat: no-repeat;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.home {
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+}
+
+h1, h3 {
+  font-family: 'Roboto' sans-serif; /* Web-safe typewriter-like font */
+  color: #fff;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+}
+
+.typewriter h3 {
+  text-align: center;
+}
+
+.typewriter h1 {
+  
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .075em solid white; /* The typwriter cursor */
+  letter-spacing: .05em; /* Adjust as needed */
+  white-space: nowrap; /* Keeps the content on a single line */
+  animation: 
+  typing 3.5s steps(30, end),
+  blinking-cursor .5s step-end infinite;
+}
+
+.typewriter {
+  margin-top: 10rem;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Social Icon Styling */
+
+.list-inline.list-social {
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.list-social.list-inline > li {
+    padding: 0;
+}
+
+.social-icon {
+    border: 1px solid transparent;
+    border-radius: 8px 2px;
+    color: #fff;
+    display: block;
+    height: 32px;
+    margin-right: 5px;
+    overflow: hidden;
+    text-align: center;
+    text-shadow: none;
+    width: 32px;
+}
+
+.social-icon i {
+    display: block;
+    font-size: 18px;
+    line-height: 32px;
+    position: relative;
+    -webkit-transition:all 0.3s ease 0s;
+    -moz-transition:all 0.3s ease 0s;
+    -ms-transition:all 0.3s ease 0s;
+    -o-transition:all 0.3s ease 0s;
+    transition:all 0.3s ease 0s;
+}
+.social-icon:hover i:first-child {
+    margin-top: -32px;
+}
+
+.social-icon:hover {
+  text-decoration: none;
+}
+.social-icon-colored.social-icon, .social-icon:hover {
+    border-color: transparent;
+    color: white;
+}
+.social-icon-colored.social-icon-facebook, .social-icon-facebook:hover {
+    background-color: #3b5998;
+}
+.social-icon-colored.social-icon-linkedin, .social-icon-linkedin:hover {
+    background-color: #0077b5;
+}
+.social-icon-colored.social-icon-github, .social-icon-github:hover {
+    background-color: #6e5494;
+}
+.social-icon-colored.social-icon-instagram, .social-icon-instagram:hover {
+    background-color: #bc2a8d;
+}
+
+ul
+{
+  display:flex;  
+  list-style:none;
+  justify-content: center;
+}
