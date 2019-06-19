@@ -2,23 +2,69 @@ body, html {
   height: 100%;
 }
 
-body {
-  background-image: url(../img/coldDawnBackground.jpg);
+section {
+  margin: 10px;
+  padding: 5px;
+}
+
+#image-bg {
+  background-image: url(../img/appleBackground.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  font-family: 'Open Sans', serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-text {
+  width: 35%;
+  float: right;
+  margin: 5%;
+}
+
+.about-portrait {
+  float: left;
+  width: 40%;
+  height: auto;
+  margin: 5%;
+}
+
+.gray-bg {
+  background-color: #F5F5F5;
 }
 
 /*Navigation Bar*/
 
 .nav-link {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-size: 20px;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
-#navbar-main {  
-    opacity: 0.75; 
-    filter:(opacity=50);       
-}
+  .navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggler {
+    border-color: transparent;
+  }
+
+  .navbar {
+    margin-top: 2.5rem;
+    margin-right: 1.5rem;
+  }
 
 /* Typewriter Effect Text Styling*/
 
@@ -29,7 +75,8 @@ body {
   justify-content: center;
 }
 
-h1, h3 {
+
+h1 a.typewrite, h3 {
   font-family:'Roboto' sans-serif; /* Web-safe typewriter-like font */
   color: #fff;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
@@ -40,8 +87,9 @@ div h3 {
 }
 
 h1 a.typewrite{
-  color: #fff;
   font-size: 42px;
+  font-weight: 900;
+  letter-spacing: 3px;
   text-decoration: none;
 }
 
