@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  background-image: url(../img/background.jpg);
+  background-image: url(https://images.pexels.com/photos/1803919/pexels-photo-1803919.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -89,6 +89,7 @@ h1 a.typewrite{
   letter-spacing: .25rem;
   text-decoration: none;
   text-align: center;
+  white-space: nowrap;
 }
 
 /* Social Icon Styling */
@@ -155,12 +156,6 @@ ul
   display:flex;  
   list-style:none;
   justify-content: center;
-}
-
-@media (min-width: 1281px) {
-  
-  //CSS
-  
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
