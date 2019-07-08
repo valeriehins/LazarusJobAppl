@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+body, html {
+  height: 100%;
+  background-image: url(https://images.pexels.com/photos/1020320/pexels-photo-1020320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+body {
+  color: #000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1335px;
+  margin: 0 auto;
+}
+
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.grid-item {
+  height: 400px;
+  flex-basis: 20%;
+  -ms-flex: auto;
+  width: 259px;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grid-row a {
+  text-decoration: none;
+}
+
+.wrapping-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  color: currentColor;
+}
+
+.grid-item-wrapper {
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
+  background: #ececec;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -webkit-transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  transition: padding 0.15s cubic-bezier(0.4,0,0.2,1), margin 0.15s cubic-bezier(0.4,0,0.2,1), box-shadow 0.15s cubic-bezier(0.4,0,0.2,1);
+  position: relative;
+}
+
+.grid-item-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.grid-image-top {
+  height: 45%;
+  width: 120%;
+  background-size: cover;
+  position: relative;
+  background-position: 50% 50%;
+  left: -10.5%;
+  top: -4.5%;
+}
+
+.grid-image-top .centered {
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+}
+
+.rex-ray-image {
+  background-image: url(https://images.pexels.com/photos/674735/pexels-photo-674735.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.sputnik-image {
+  background-image: url(https://images.pexels.com/photos/1266012/pexels-photo-1266012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.edgex-image {
+  background-image: url(https://images.pexels.com/photos/173294/pexels-photo-173294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.openswitch-image {
+  background-image: url(https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.scaleio-image {
+  background-image: url(https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/54524975_10156862482693145_4713953046625779712_o.jpg?_nc_cat=101&_nc_oc=AQnELxYDnACWS1rK9wn4ucPeQgGu3W6jYezLL2qn5tjR-T4yKNp8BNd7MwpOu4VKvNY&_nc_ht=scontent-sjc3-1.xx&oh=3775b48c839771484da42701886b737c&oe=5DAD63EA);
+}
+
+
+.csi-image {
+  background-image: url(https://images.pexels.com/photos/410092/pexels-photo-410092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.kubernetes-image {
+  background-image: url(https://images.pexels.com/photos/100582/pexels-photo-100582.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.grpc-image {
+  background-image: url(https://images.pexels.com/photos/6946/summer-bicycle-letsride-paul-filitchkin.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.envoy-image {
+  background-image: url(https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/48420801_10156648731393145_5744599349166342144_o.jpg?_nc_cat=109&_nc_oc=AQmKdhh7vSmepwq9XC8XuXSqSs7HlLeXXkhuU-gSy6QsXhQQkU24DtNUOvyhZbAH5dw&_nc_ht=scontent-sjc3-1.xx&oh=2d7919068126dd0f5c994610fffbe38b&oe=5D7C588F);
+}
+
+.istio-image {
+  background-image: url(https://images.pexels.com/photos/1549306/pexels-photo-1549306.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+}
+
+.grid-item-content {
+  padding: 0 20px 20px 20px;
+}
+
+.item-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  display: block;
+}
+
+.item-category {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.item-excerpt {
+  margin-bottom: 20px;
+  display: block;
+  font-size: 14px;
+}
+
+.more-info {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  padding-left: 0;
+  transition-duration: .5s;
+  font-size: 12px;
+  display: flex;
+}
+
+.more-info i {
+  padding-left: 5px;
+  transition-duration: .5s;
+}
+
+.grid-item:hover .more-info i {
+  padding-left: 20px;
+  transition-duration: .5s;
+}
+
+.more-info i::before {
+  font-size: 16px;
+}
+
+.grid-item:hover .grid-item-wrapper {
+  padding: 2% 2%;
+  margin: -2% -2%;
+}
+
+@media(max-width: 1333px) {
+  .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media(max-width: 1073px) {
+   .grid-item {
+    flex-basis: 33.33%;
+  }
+}
+
+@media(max-width: 815px) {
+  .grid-item {
+    flex-basis: 50%;
+  }
+}
+
+@media(max-width: 555px) {
+  .grid-item {
+    flex-basis: 100%;
+  }
+}

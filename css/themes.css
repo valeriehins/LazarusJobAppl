@@ -1,16 +1,13 @@
 body, html {
   height: 100%;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
   margin: 10px;
   padding: 5px;
-}
-
-#image-bg {
-  background-image: url(../img/appleBackground.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 p {
@@ -20,10 +17,14 @@ p {
 
 h1 {
   font-family: 'Open Sans', sans-serif;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 300;
   text-transform: uppercase;
   margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
 
 .about-text {
@@ -37,10 +38,6 @@ h1 {
   width: 40%;
   height: auto;
   margin: 5%;
-}
-
-.gray-bg {
-  background-color: #F5F5F5;
 }
 
 /*Navigation Bar*/
@@ -58,11 +55,11 @@ h1 {
   }
 
   .navbar-toggler {
-    border-color: transparent;
+    border: none;
   }
 
   .navbar {
-    margin-top: 2.5rem;
+    margin-top: 0rem;
     margin-right: 1.5rem;
   }
 
@@ -80,17 +77,18 @@ h1 a.typewrite, h3 {
   font-family:'Roboto' sans-serif; /* Web-safe typewriter-like font */
   color: #fff;
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-}
+ }
 
 div h3 {
   text-align: center;
 }
 
 h1 a.typewrite{
-  font-size: 42px;
+  font-size: 1.5rem;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: .25rem;
   text-decoration: none;
+  text-align: center;
 }
 
 /* Social Icon Styling */
@@ -158,3 +156,36 @@ ul
   list-style:none;
   justify-content: center;
 }
+
+@media (min-width: 1281px) {
+  
+  //CSS
+  
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+ h1 a.typewrite
+{
+  font-size: 2rem;  
+}
+
+h3
+{
+  font-size: 1.25rem;  
+}
+  
+}
+
+@media (min-width: 1025px){
+  
+h1 a.typewrite
+{
+  font-size: 2.5rem;  
+}
+
+h3
+{
+  font-size: 1.5rem;  
+}
+
